@@ -3,7 +3,7 @@ Template Name: Admin Template
 Author: Niravjoshi / Wrappixel
 File: scss
 */
-@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
 /*Theme Colors*/
 /**
  * Table Of Content
@@ -22,14 +22,14 @@ File: scss
  *	12. Forms
  *	14. Component
  */
-@import url('../assets/icons/font-awesome/css/fontawesome-all.css');
-@import url('../assets/icons/simple-line-icons/css/simple-line-icons.css');
-@import url('../assets/icons/weather-icons/css/weather-icons.min.css');
-@import url('../assets/icons/themify-icons/themify-icons.css');
-@import url('../assets/icons/flag-icon-css/flag-icon.min.css');
-@import url('../assets/icons/material-design-iconic-font/css/materialdesignicons.min.css');
-@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
-@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
+@import url("../assets/font-awesome/css/fontawesome.css");
+@import url("../assets/simple-line-icons/css/simple-line-icons.css");
+@import url("../assets/weather-icons/css/weather-icons.min.css");
+@import url("../assets/themify-icons/themify-icons.css");
+@import url("../assets/flag-icon-css/flag-icon.min.css");
+@import url("../assets/material-design-iconic-font/css/material-design-iconic-font.css");
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
 .skin-default .topbar {
   background: #4F5467; }
   .skin-default .topbar .top-navbar .navbar-header .navbar-brand .dark-logo {
