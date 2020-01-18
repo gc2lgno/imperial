@@ -15,9 +15,13 @@
 //     return view('welcome');
 // });
 
+// Route::get('/', function () {
+//     return view('home');    
+// })->middleware('auth');
+
 Route::get('/', function () {
-    return view('home');    
-})->middleware('auth');
+    return view('home');
+});
 
 Auth::routes();
 
