@@ -1,6 +1,9 @@
 @extends('layouts.app')
 @section('title', 'Registro de Usuario')
 @section('content')
+@section('styles')
+    <link rel="stylesheet" href=" {{ asset('css/login-register.css') }} ">
+@endsection
 <section id="wrapper" class="login-register login-sidebar">
     <div class="login-box card">
         <div class="card-body">

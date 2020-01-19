@@ -6,19 +6,20 @@
         <div class="card-body">
             <!-- FORMULARIO PARA INICIO DE SESIÓN -->
             <div id="loginform" style="margin-top: 80px;">
-                <form class="form-horizontal form-material text-center" action="#">
-                    <a href="" class="db">
+                <form class="form-horizontal form-material text-center" method="POST" action=" {{ route('login') }} ">
+                    @csrf
+                    <a href=" {{ route('home') }} " class="db">
                         <img src="{{ asset('img/imperial-logo.png') }}" alt="Home" /><br />
                     </a>
                     @include('common.errors')
                     <div class="form-group m-t-40">
                         <div class="col-xs-12">
-                            <input class="form-control" type="text" required="" placeholder="Usuario" />
+                            <input class="form-control" name="username" type="text" required="" placeholder="Usuario" />
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-xs-12">
-                            <input class="form-control" type="password" required="" placeholder="Contraseña" />
+                            <input class="form-control" name="password" type="password" required="" placeholder="Contraseña" />
                         </div>
                     </div>
                     <div class="form-group text-center m-t-20">
