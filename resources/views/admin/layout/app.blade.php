@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" />
-    <title>{{ env('APP.ENV') }} - @yield('title', 'Panel de Control')</title>
+    <title>Hotel Imperial - @yield('title', 'Panel de Control')</title>
     <!-- Custom CSS -->
     <link href="{{ asset('css/hotel.css') }}" rel="stylesheet" />
     {{--Scripts--}}
@@ -85,7 +85,9 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                @yield('content')
+                                <div id="app">
+                                    @yield('content')
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -118,10 +120,7 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
-    <!-- Bootstrap tether Core JavaScript -->
-    <!-- <script src="../assets/node_modules/popper/popper.min.js"></script> Probablemente esten en all.js -->
-    <!-- <script src="../assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> Probablemente esten en all.js -->
+    <script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
     <script src=" {{ asset('js/perfect-scrollbar.jquery.min.js') }} "></script>
     <!--Wave Effects -->
@@ -133,6 +132,10 @@
     <script src="{{ asset('js/jquery.sparkline.min.js') }}"></script>
     <!--Custom JavaScript -->
     <script src="{{ asset('js/custom.js') }}"></script>
+    <script type="text/javascript">
+        $('.scroll-sidebar').perfectScrollbar();
+    </script>
+
 </body>
 
 </html>
