@@ -10,6 +10,7 @@
     <meta name="author" content=""/>
     <!-- Favicon icon -->
     <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon"/>
+    
     <title>Hotel Imperial - @yield('title', 'Página de Inicio')</title>
 
     <!-- page css -->

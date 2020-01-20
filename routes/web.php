@@ -20,8 +20,8 @@
 // })->middleware('auth');
 
 Route::get('/', function () {
-    return view('home');
-});
+    return view('admin.home');
+})->middleware('auth');
 
 Auth::routes();
 
