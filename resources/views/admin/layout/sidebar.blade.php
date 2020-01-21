@@ -31,9 +31,15 @@
                         <span class="hide-menu">Clientes</span>
                     </a>
                     <ul aria-expanded="false" class="collapse">
-                        <li><a href="{{ route('customer.create') }}">
+                        <li>
+                            <a href="{{ route('customer.create') }}">
                                 <i class="ti-plus menu-icon"></i>
                                 Crear</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('customer.create') }}">
+                                <i class="ti-search menu-icon"></i>
+                                Buscar</a>
                         </li>
                         <li>
                             <a href="{{ route('customer.index') }}">

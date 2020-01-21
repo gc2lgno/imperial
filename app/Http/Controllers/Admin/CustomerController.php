@@ -51,7 +51,8 @@ class CustomerController extends Controller
      */
     public function show($id)
     {
-        //
+        $customer = Customer::findOrFail($id);
+        return view('admin.customer.show', compact('customer'));
     }
 
     /**
@@ -62,7 +63,8 @@ class CustomerController extends Controller
      */
     public function edit($id)
     {
-        //
+        $customer = Customer::findOrFail($id);
+        return view('admin.customer.edit', compact('customer'));
     }
 
     /**
@@ -74,7 +76,10 @@ class CustomerController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $customer = Customer::findOrFail($id);
+        $customer->fill($request->all())->save();
+        return redirect()->route('customer.show', $id)
+                        ->with('success', '¡Datos actualizados correctamente!');
     }
 
     /**
