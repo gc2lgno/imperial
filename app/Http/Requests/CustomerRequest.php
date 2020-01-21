@@ -26,9 +26,9 @@ class CustomerRequest extends FormRequest
         return [
             'nombres' => 'required|max:60',
             'apellidos' => 'required|max:60',
-            'rif' => 'required',
+            'rif' => 'required|unique:customers',
             'telefono' => 'numeric',
-            'email' => 'email'
+            'email' => 'email|unique:customers'
         ];
     }
 }
