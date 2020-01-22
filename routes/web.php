@@ -23,3 +23,5 @@ Route::resource('customer', 'Admin\CustomerController');
 Route::get('hotel/detalle/{hotel}', 'Admin\HotelController@getDatos')->name('hotel.detalle');
 Route::get('hotel/edit/{hotel}', 'Admin\HotelController@editHotel')->name('hotel.edit');
 Route::put('hotel/{hotel}', 'Admin\HotelController@updateHotel')->name('hotel.update');
+
+Route::resource('service', 'Admin\ServiceController');

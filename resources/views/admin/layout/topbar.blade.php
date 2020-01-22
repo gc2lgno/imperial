@@ -7,7 +7,7 @@
         <!-- Logo -->
         <!-- ============================================================== -->
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{{ route('home') }}">
                 <!-- Logo icon --><b>
                     <!-- Light Logo icon -->
                     <img src="{{ asset('img/logo-white.png') }}" alt="homepage" class="light-logo" />

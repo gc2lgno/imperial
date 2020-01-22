@@ -84,12 +84,26 @@
 
                 <li class="nav-small-cap">--- Administración</li>
                 <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                        <i class="ti-calendar"></i>
+                        <i class="icon-directions"></i>
                         <span class="hide-menu">Hotel</span></a>
                     <ul aria-expanded="false" class="collapse">
                         <li><a href=" {{ route('hotel.detalle', 1) }} ">
-                                <i class="ti-plus menu-icon"></i>
+                                <i class="icon-info menu-icon"></i>
                                 Datos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                        <i class="icon-badge"></i>
+                        <span class="hide-menu">Servicios</span></a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li><a href=" {{ route('service.index') }} ">
+                                <i class="ti-menu-alt menu-icon"></i>
+                                Lista</a>
+                        </li>
+                        <li><a href=" {{ route('service.create') }} ">
+                                <i class="ti-plus menu-icon"></i>
+                                Crear</a>
                         </li>
                     </ul>
                 </li>
