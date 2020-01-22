@@ -24,15 +24,19 @@
                                 <td>{{ $service->detalle }}</td>
                                 <td>
                                     <div class="row button-group">
-                                        <a href=" {{ route('service.show', $service->id) }} "
+                                        <a href="{{ route('service.show', $service->id) }}"
                                             class="btn btn-circle btn-success" data-toggle="tooltip"
                                             title="Datos del Servicio">
                                             <i class="ti-eye"></i>
                                         </a>
-                                        <a href="#" class="btn btn-circle btn-danger" data-toggle="tooltip"
-                                            title="Eliminar Servicio">
-                                            <i class="ti-trash"></i>
-                                        </a>
+                                        <form action="{{ route('service.destroy', $service->id) }}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-circle btn-danger"
+                                                data-toggle="tooltip" title="Eliminar Servicio">
+                                                <i class="ti-trash"></i>
+                                            </button>
+                                        </form>
                                     </div>
                                 </td>
                             </tr>
