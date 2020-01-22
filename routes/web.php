@@ -13,9 +13,13 @@
 Auth::routes();
 
 Route::get('/', function () {
-    return view('admin.home');
-})->middleware('auth');
+    return redirect()->route('home');
+});
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->middleware('auth')->name('home');
 
 Route::resource('customer', 'Admin\CustomerController');
+
+Route::get('hotel/detalle/{hotel}', 'Admin\HotelController@getDatos')->name('hotel.detalle');
+Route::get('hotel/edit/{hotel}', 'Admin\HotelController@editHotel')->name('hotel.edit');
+Route::put('hotel/{hotel}', 'Admin\HotelController@updateHotel')->name('hotel.update');

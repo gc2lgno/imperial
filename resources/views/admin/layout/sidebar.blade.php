@@ -85,16 +85,11 @@
                 <li class="nav-small-cap">--- Administración</li>
                 <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                         <i class="ti-calendar"></i>
-                        <span class="hide-menu">Reservaciones</span></a>
+                        <span class="hide-menu">Hotel</span></a>
                     <ul aria-expanded="false" class="collapse">
-                        <li><a href="#">
+                        <li><a href=" {{ route('hotel.detalle', 1) }} ">
                                 <i class="ti-plus menu-icon"></i>
-                                Crear</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="ti-menu-alt menu-icon"></i>
-                                Lista</a>
+                                Datos</a>
                         </li>
                     </ul>
                 </li>
