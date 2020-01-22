@@ -18,7 +18,7 @@ class CreateHotelsTable extends Migration
             $table->string('nombre')->unique();
             $table->string('rif')->unique();
             $table->string('direccion')->unique();
-            $table->unsignedBigInteger('status_hotel_id');
+            $table->unsignedBigInteger('hotel_status_id');
             $table->timestamps();
             $table->foreign('status_hotel_id')->references('id')->on('hotel_status');
         });

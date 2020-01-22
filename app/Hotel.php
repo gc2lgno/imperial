@@ -10,6 +10,12 @@ class Hotel extends Model
         'nombre',
         'rif',
         'direccion',
-        'telefono'
+        'telefono',
+        'hotel_status_id'
     ];
+
+    public function status()
+    {
+        return $this->belongsTo(HotelStatus::class, 'hotel_status_id');
+    }
 }

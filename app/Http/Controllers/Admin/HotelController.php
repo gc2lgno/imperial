@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Hotel;
+use App\HotelStatus;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -19,7 +20,9 @@ class HotelController extends Controller
     function editHotel($id)
     {
         $hotel = Hotel::findOrFail($id);
-        return view('admin.hotel.edit', compact('hotel'));
+        $status = HotelStatus::all();
+
+        return view('admin.hotel.edit', compact('hotel', 'status'));
     }
 
 
@@ -30,5 +33,7 @@ class HotelController extends Controller
         $hotel->fill($request->all())->save();
         return redirect()->route('hotel.detalle', $id)
                 ->with('success', 'Datos del Hotel actualizados correctamente');
+
+        // return $request->all();
     }
 }

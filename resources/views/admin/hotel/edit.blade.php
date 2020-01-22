@@ -50,6 +50,20 @@
                             </div>
                         </div>
                         <!--/row-->
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label class="control-label">Estado del Hotel</label>
+                                    <select name="hotel_status_id" class="form-control" required>
+                                        <option value="">Selecciona</option>
+                                        @foreach ($status as $stat)
+                                        <option value="{{ $stat->id }}">{{ $stat->nombre }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/row-->
                     </div>
                     <div class="form-actions">
                         <button type="submit" class="btn waves-effect waves-light btn-success">
