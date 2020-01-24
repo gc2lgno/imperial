@@ -19,13 +19,10 @@ class CreateRoomsTable extends Migration
             $table->integer('numero');
             $table->string('ubicacion');
             $table->unsignedBigInteger('room_type_id');
-            $table->unsignedBigInteger('room_status_id');
-            $table->unsignedBigInteger('services_id');
+            $table->string('room_status');
             // Claves foráneas
             $table->foreign('hotel_id')->references('id')->on('hotels');
             $table->foreign('room_type_id')->references('id')->on('room_types');
-            $table->foreign('room_status_id')->references('id')->on('room_status');
-            $table->foreign('services_id')->references('id')->on('services');
             $table->timestamps();
         });
     }

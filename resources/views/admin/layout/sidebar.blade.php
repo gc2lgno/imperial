@@ -26,30 +26,13 @@
                         </li>
                     </ul>
                 </li>
-                <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                <li> <a class="waves-effect waves-dark" href="{{ route('customer.index') }}" aria-expanded="false">
                         <i class="ti-user"></i>
                         <span class="hide-menu">Clientes</span>
                     </a>
-                    <ul aria-expanded="false" class="collapse">
-                        <li>
-                            <a href="{{ route('customer.create') }}">
-                                <i class="ti-plus menu-icon"></i>
-                                Crear</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('customer.create') }}">
-                                <i class="ti-search menu-icon"></i>
-                                Buscar</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('customer.index') }}">
-                                <i class="ti-menu-alt menu-icon"></i>
-                                Lista</a>
-                        </li>
-                    </ul>
                 </li>
                 <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                        <i class="ti-direction-alt"></i>
+                        <i class="ti-clipboard"></i>
                         <span class="hide-menu">Habitaciones</span>
                     </a>
                     <ul aria-expanded="false" class="collapse">
@@ -93,49 +76,17 @@
                         </li>
                     </ul>
                 </li>
-                <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                <li> <a class="waves-effect waves-dark" href="{{ route('service.index') }}" aria-expanded="false">
                         <i class="icon-badge"></i>
                         <span class="hide-menu">Servicios</span></a>
-                    <ul aria-expanded="false" class="collapse">
-                        <li><a href=" {{ route('service.index') }} ">
-                                <i class="ti-menu-alt menu-icon"></i>
-                                Lista</a>
-                        </li>
-                        <li><a href=" {{ route('service.create') }} ">
-                                <i class="ti-plus menu-icon"></i>
-                                Crear</a>
-                        </li>
-                    </ul>
                 </li>
                 <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                        <i class="ti-user"></i>
-                        <span class="hide-menu">Clientes</span>
-                    </a>
-                    <ul aria-expanded="false" class="collapse">
-                        <li><a href="#">
-                                <i class="ti-plus menu-icon"></i>
-                                Crear</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="ti-menu-alt menu-icon"></i>
-                                Lista</a>
-                        </li>
-                    </ul>
-                </li>
-                <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                        <i class="ti-direction-alt"></i>
+                        <i class="ti-clipboard"></i>
                         <span class="hide-menu">Habitaciones</span>
                     </a>
                     <ul aria-expanded="false" class="collapse">
-                        <li><a href="#">
-                                <i class="ti-plus menu-icon"></i>
-                                Crear</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="ti-menu-alt menu-icon"></i>
-                                Lista</a>
+                        <li> <a class="waves-effect waves-dark" href="{{ route('room-types.index') }}" aria-expanded="false"><i
+                                    class="ti-panel menu-icon"></i><span class="hide-menu">Categorías</span></a>
                         </li>
                     </ul>
                 </li>

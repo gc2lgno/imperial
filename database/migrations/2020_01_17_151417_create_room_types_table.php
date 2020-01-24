@@ -18,6 +18,10 @@ class CreateRoomTypesTable extends Migration
             $table->string('nombre')->unique();
             $table->string('detalles');
             $table->integer('precio');
+            $table->integer('total_room');
+            $table->unsignedBigInteger('services_id');
+            // Clave foránea
+            $table->foreign('services_id')->references('id')->on('services');
             $table->timestamps();
         });
     }

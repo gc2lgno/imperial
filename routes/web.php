@@ -25,3 +25,4 @@ Route::get('hotel/edit/{hotel}', 'Admin\HotelController@editHotel')->name('hotel
 Route::put('hotel/{hotel}', 'Admin\HotelController@updateHotel')->name('hotel.update');
 
 Route::resource('service', 'Admin\ServiceController');
+Route::resource('room-types', 'Admin\RoomTypesController');

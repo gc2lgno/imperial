@@ -18,4 +18,8 @@ class Hotel extends Model
     {
         return $this->belongsTo(HotelStatus::class, 'hotel_status_id');
     }
+
+    public function rooms(){
+        return $this->hasMany(Room::class);
+    }
 }

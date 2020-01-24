@@ -8,6 +8,9 @@
         @include('common.success')
         <div class="card">
             <div class="card-body">
+                <a href="#" class="btn btn-success d-none d-lg-block m-l-15 float-right m-b-10 waves-effect waves-dark"><i class="ti-search menu-icon"></i> Buscar</a>
+
+                <a href="{{ route('service.create') }}" class="btn btn-info d-none d-lg-block m-l-15 float-right m-b-10 waves-effect waves-dark"><i class="ti-plus menu-icon"></i> Crear nuevo</a>
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>
