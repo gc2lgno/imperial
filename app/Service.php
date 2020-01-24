@@ -10,4 +10,9 @@ class Service extends Model
         'nombre',
         'detalle'
     ];
+
+    function room()
+    {
+        return $this->belongsToMany(Room::class);
+    }
 }
