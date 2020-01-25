@@ -7,7 +7,7 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-body">
-                <form action="{{ route('customer.store') }}" method="POST">
+                <form action="{{ route('room-types.store') }}" method="POST">
                     @csrf
                     <div class="form-body">
                         <h3 class="card-title">Datos del Tipo de habitación</h3>
@@ -15,8 +15,8 @@
                         <div class="row p-t-20">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="control-label">Nombre</label>
-                                    <input required type="text" name="nombre" class="form-control">
+                                    <label class="control-label" for="nombre">Nombre</label>
+                                    <input required type="text" id="nombre" name="nombre" class="form-control">
                                     <small class="form-control-feedback"> Campo obligatorio </small> </div>
                             </div>
                             <!--/span-->
