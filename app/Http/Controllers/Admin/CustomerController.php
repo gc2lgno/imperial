@@ -33,20 +33,20 @@ class CustomerController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(CustomerRequest $request)
     {
         Customer::create($request->all());
         return redirect()->route('customer.index')
-                ->with('success', '¡Cliente creado exitosamente!');
+            ->with('success', '¡Cliente creado exitosamente!');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -58,7 +58,7 @@ class CustomerController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -70,8 +70,8 @@ class CustomerController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -79,17 +79,20 @@ class CustomerController extends Controller
         $customer = Customer::findOrFail($id);
         $customer->fill($request->all())->save();
         return redirect()->route('customer.show', $id)
-                        ->with('success', '¡Datos actualizados correctamente!');
+            ->with('success', '¡Datos actualizados correctamente!');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        //
+        $customer = Customer::findOrFail($id);
+        $customer->delete();
+        return redirect()->route('customer.index')
+            ->with('success', '¡Cliente eliminado con éxito!');
     }
 }
