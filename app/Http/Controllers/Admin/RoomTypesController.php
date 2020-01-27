@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\RoomTypeRequest;
+use App\Http\Requests\RoomTypesRequest;
 use App\Room;
 use App\RoomTypes;
 use Illuminate\Http\Request;
@@ -36,10 +38,11 @@ class RoomTypesController extends Controller
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(RoomTypesRequest $request)
     {
         RoomTypes::create($request->all());
-        return redirect()->route('room-types.index')->with('success', '¡Categoría creada correctamente!');
+        return redirect()->route('room-types.index')
+                ->with('success', '¡Categoría creada correctamente!');
     }
 
     /**
@@ -89,6 +92,9 @@ class RoomTypesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $roomType = RoomTypes::find($id);
+        $roomType->delete();
+        return redirect()->route('room-types.index')
+            ->with('success', '¡Categoría eliminada correctamente!');
     }
 }

@@ -86,7 +86,7 @@
                     </a>
                     <ul aria-expanded="false" class="collapse">
                         <li> <a class="waves-effect waves-dark" href="{{ route('room-types.index') }}" aria-expanded="false"><i
-                                    class="ti-panel menu-icon"></i><span class="hide-menu">Categorías</span></a>
+                                    class="ti-panel menu-icon"></i><span class="hide-menu">Tipos</span></a>
                         </li>
                     </ul>
                 </li>

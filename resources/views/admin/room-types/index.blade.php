@@ -36,10 +36,14 @@
                                                title="Datos del tipo de Habitación">
                                                 <i class="ti-eye"></i>
                                             </a>
-                                            <a href="#" class="btn btn-circle btn-danger" data-toggle="tooltip"
+                                            <form action="{{ route('room-types.destroy', $type->id) }}" method="post">
+                                                @csrf
+                                                @method('DELETE')
+                                            <button type="submit" class="btn btn-circle btn-danger" data-toggle="tooltip"
                                                title="Eliminar tipo de Habitación">
                                                 <i class="ti-trash"></i>
-                                            </a>
+                                            </button>
+                                            </form>
                                         </div>
                                     </td>
                                 </tr>
