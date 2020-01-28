@@ -11,8 +11,7 @@ class Room extends Model
         'numero',
         'ubicacion',
         'room_type_id',
-        'room_status',
-        'services_id'
+        'room_status'
     ];
 
     public function hotel()

@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Room;
+use App\RoomTypes;
+use App\Service;
 use Illuminate\Http\Request;
 
 class RoomController extends Controller
@@ -14,7 +17,8 @@ class RoomController extends Controller
      */
     public function index()
     {
-        //
+        $rooms = Room::latest()->paginate(10);
+        return view('admin.rooms.index', compact('rooms'));
     }
 
     /**
@@ -24,7 +28,9 @@ class RoomController extends Controller
      */
     public function create()
     {
-        //
+        $roomTypes = RoomTypes::all();
+        $services = Service::all();
+        return view('admin.rooms.create', compact(['roomTypes', 'services']));
     }
 
     /**
@@ -35,7 +41,7 @@ class RoomController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return dd($request->all());
     }
 
     /**

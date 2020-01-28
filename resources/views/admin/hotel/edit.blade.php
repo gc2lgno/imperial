@@ -16,24 +16,24 @@
                         <div class="row p-t-20">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="control-label">Nombre</label>
-                                    <input required type="text" name="nombres" class="form-control"
+                                    <label class="control-label" for="nombre">Nombre</label>
+                                    <input required type="text" name="nombre" id="nombre" class="form-control"
                                         value="{{ $hotel->nombre }}">
                                 </div>
                             </div>
                             <!--/span-->
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="control-label">RIF</label>
-                                    <input required type="text" name="rif" class="form-control"
+                                    <label class="control-label" for="rif">RIF</label>
+                                    <input required type="text" name="rif" id="rif" class="form-control"
                                         value="{{ $hotel->rif }}">
                                 </div>
                             </div>
                             <!--/span-->
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="control-label">Teléfono</label>
-                                    <input required type="text" name="telefono" class="form-control"
+                                    <label class="control-label" for="telefono">Teléfono</label>
+                                    <input required type="text" name="telefono" id="telefono" class="form-control"
                                         value="{{ $hotel->telefono }}">
                                 </div>
                             </div>
@@ -43,8 +43,8 @@
                         <div class="row">
                             <div class="col-md-9">
                                 <div class="form-group">
-                                    <label class="control-label">Dirección</label>
-                                    <textarea name="direccion" cols="15" rows="5"
+                                    <label class="control-label" for="direccion">Dirección</label>
+                                    <textarea name="direccion" id="direccion" cols="15" rows="5"
                                         class="form-control">{{ $hotel->direccion }}</textarea>
                                 </div>
                             </div>
@@ -53,8 +53,8 @@
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label class="control-label">Estado del Hotel</label>
-                                    <select name="hotel_status_id" class="form-control" required>
+                                    <label class="control-label" for="hotel_status_id">Estado del Hotel</label>
+                                    <select name="hotel_status_id" id="hotel_status_id" class="form-control" required>
                                         <option value="">Selecciona</option>
                                         @foreach ($status as $stat)
                                         <option value="{{ $stat->id }}">{{ $stat->nombre }}</option>

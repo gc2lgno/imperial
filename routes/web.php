@@ -26,3 +26,4 @@ Route::put('hotel/{hotel}', 'Admin\HotelController@updateHotel')->name('hotel.up
 
 Route::resource('service', 'Admin\ServiceController');
 Route::resource('room-types', 'Admin\RoomTypesController');
+Route::resource('rooms', 'Admin\RoomController');
