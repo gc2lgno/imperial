@@ -16,16 +16,20 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label class="control-label" for="numero">Número de Habitación</label>
-                                        <input required type="number" name="numero" id="numero" class="form-control">
+                                        <input required type="number" min="1" max="77" name="numero" id="numero" class="form-control">
                                         <small class="form-control-feedback"> Campo obligatorio</small>
                                     </div>
                                 </div>
                                 <!--/span-->
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="control-label" for="ubicacion">Ubicación</label>
-                                        <input required type="text" name="ubicacion" id="ubicacion"
-                                               class="form-control">
+                                        <select required name="ubicacion" id="ubicacion" class="form-control">
+                                            <option value="">--Seleccionar--</option>
+                                            @for($i = 1; $i <= $pisos; $i++)
+                                                <option value="{{ $i }}">PISO {{ $i}}</option>
+                                            @endfor
+                                        </select>
                                         <small class="form-control-feedback"> Campo obligatorio</small>
                                     </div>
                                 </div>
@@ -70,7 +74,7 @@
                                         @foreach($services as $service)
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input"
-                                                       id="service_id[{{ $service->id }}]" name="service_id[]"
+                                                       id="service_id[{{ $service->id }}]" name="services[]"
                                                        value="{{ $service->id }}">
                                                 <label class="custom-control-label"
                                                        for="service_id[{{ $service->id }}]">

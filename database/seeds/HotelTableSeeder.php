@@ -19,6 +19,7 @@ class HotelTableSeeder extends Seeder
         $imperial->direccion = "Avenida Casa de Zinc, antiguo Pepeganga";
         $imperial->telefono = "02473413561";
         $imperial->hotel_status_id = HotelStatus::first()->id;
+        $imperial->pisos = 2;
         $imperial->save();
     }
 }

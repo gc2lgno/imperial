@@ -33,7 +33,6 @@ class HotelController extends Controller
         $hotel->fill($request->all())->save();
         return redirect()->route('hotel.detalle', $id)
                 ->with('success', 'Datos del Hotel actualizados correctamente');
-
-        // return $request->all();
+//         return $request->all();
     }
 }

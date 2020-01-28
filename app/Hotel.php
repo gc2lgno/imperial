@@ -11,7 +11,8 @@ class Hotel extends Model
         'rif',
         'direccion',
         'telefono',
-        'hotel_status_id'
+        'hotel_status_id',
+        'pisos'
     ];
 
     public function status()
