@@ -19,20 +19,21 @@
                         <table class="table table-striped">
                             <thead>
                             <tr>
-                                <th width="150px">N° Habitación</th>
-                                <th>Ubicación</th>
-                                <th>Tipo</th>
-                                <th>Estatus</th>
-                                <th class="text-nowrap">Acciones</th>
+                                <th class="text-center" width="150px">N° Habitación</th>
+                                <th class="text-center">Ubicación</th>
+                                <th class="text-center">Tipo</th>
+                                <th class="text-center">Estatus</th>
+                                <th class="text-nowrap text-center">Acciones</th>
                             </tr>
                             </thead>
                             <tbody>
                             @foreach ($rooms as $room)
                                 <tr>
-                                    <td> {{ $room->numero }}</td>
-                                    <td> {{ $room->ubicacion }} </td>
-                                    <td> {{ $room->roomType }} </td>
-                                    <td> {{ $room->room_status }} </td>
+                                    <td class="text-center"> {{ $room->numero }}</td>
+                                    <td class="text-center"> PISO {{ $room->ubicacion }} </td>
+                                    <td class="text-center"> {{ $room->roomType->nombre }} </td>
+                                    <td class="text-center"><h1
+                                                class="badge @if($room->room_status == "ACTIVA") badge-success @else badge-danger @endif">{{ $room->room_status }}</h1></td>
                                     <td>
                                         <div class="row button-group">
                                             <a href=" {{ route('rooms.show', $room->id) }} "

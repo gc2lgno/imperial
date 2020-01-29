@@ -12,8 +12,7 @@ class RoomTypes extends Model
         'nombre',
         'detalles',
         'precio',
-        'total_room',
-        'services_id'
+        'total_room'
     ];
 
     public function rooms(){

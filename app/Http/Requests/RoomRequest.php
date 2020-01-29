@@ -24,7 +24,7 @@ class RoomRequest extends FormRequest
     public function rules()
     {
         return [
-            'numero' => 'integer|unique|min:1|max:2',
+            'numero' => 'integer|unique:rooms|min:1|max:77',
             'ubicacion' => 'integer',
             'room_type_id' => 'integer',
             'room_status' => 'in:ACTIVA,INACTIVA'

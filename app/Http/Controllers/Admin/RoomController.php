@@ -8,6 +8,7 @@ use App\Http\Requests\RoomRequest;
 use App\Room;
 use App\RoomTypes;
 use App\Service;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -20,7 +21,7 @@ class RoomController extends Controller
      */
     public function index()
     {
-        $rooms = Room::latest()->paginate(10);
+        $rooms = Room::orderBy('id', 'ASC')->paginate(10);
         return view('admin.rooms.index', compact('rooms'));
     }
 
@@ -44,7 +45,7 @@ class RoomController extends Controller
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(RoomRequest $request)
     {
         /*Datos del Hotel*/
         $hotel = Hotel::find(1);
@@ -63,15 +64,21 @@ class RoomController extends Controller
 
         /*Inserción en tabla pivote ROOMS - SERVICES*/
         $room_id = $room->id;
-        $services = $request->input('services');
-        foreach ($services as $service) {
-            $room_service = DB::table('rooms_services')->insert([
-                'room_id' => $room_id,
-                'service_id' => $service
-            ]);
+        if (!empty($request->input('services'))) {
+            $services = $request->input('services');
+            foreach ($services as $service) {
+                DB::table('rooms_services')->insert([
+                    'room_id' => $room_id,
+                    'service_id' => $service,
+                    'created_at' => Carbon::now(),
+                    'updated_at' => Carbon::now()
+                ]);
+            }
         }
         /*FIN Inserción en tabla pivote ROOMS - SERVICES*/
-        return dd($request->all());
+
+        return redirect()->route('rooms.index')->with('success', '¡Habitación creada exitosamente!');
+
     }
 
     /**
