@@ -125,7 +125,7 @@ class RoomController extends Controller
      */
     public function destroy($id)
     {
-        //
+        abort(403, "Esta acción no está permitida. Contacta al administrador de Sistema");
     }
 
     /**
