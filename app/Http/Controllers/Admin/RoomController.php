@@ -3,14 +3,14 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Hotel;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\RoomRequest;
 use App\Room;
-use App\RoomTypes;
 use App\Service;
 use Carbon\Carbon;
+use App\RoomTypes;
 use Illuminate\Http\Request;
+use App\Http\Requests\RoomRequest;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
 
 class RoomController extends Controller
 {
@@ -63,17 +63,7 @@ class RoomController extends Controller
 
         /*Inserción en tabla pivote ROOMS - SERVICES*/
         $room_id = $room->id;
-        if (!empty($request->input('services'))) {
-            $services = $request->input('services');
-            foreach ($services as $service) {
-                DB::table('rooms_services')->insert([
-                    'room_id' => $room_id,
-                    'service_id' => $service,
-                    'created_at' => Carbon::now(),
-                    'updated_at' => Carbon::now()
-                ]);
-            }
-        }
+        $this->asignaServicios($request, $room_id);
         /*FIN Inserción en tabla pivote ROOMS - SERVICES*/
 
         return redirect()->route('rooms.index')->with('success', '¡Habitación creada exitosamente!');
@@ -103,10 +93,7 @@ class RoomController extends Controller
         $room = Room::findOrFail($id);
         $roomTypes = RoomTypes::all();
         $pisos = Hotel::find(1)->pisos;
-        $servicios = Service::all();
-
-        $serviciosActivos = $room->services->pluck('id')->toArray();
-        $serviciosDisponibles = $servicios->except($serviciosActivos);
+        $serviciosDisponibles = Service::whereNotIn('id', $room->services->pluck('id')->toArray())->get();
 
         return view('admin.rooms.edit', compact(['room', 'roomTypes', 'serviciosDisponibles', 'pisos']));
     }
@@ -120,7 +107,14 @@ class RoomController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        /*Actualizar data de la Habitación*/
+        $room = Room::findOrFail($id);
+        $room->fill($request->all())->save();
+        /*Eliminar servicios asociados a la habitación*/
+        DB::table('rooms_services')->where('room_id', '=', $id)->delete();
+        $this->asignaServicios($request, $room->id);
+
+        return redirect()->route('rooms.index')->with('success', '¡Habitación editada correctamente!');
     }
 
     /**
@@ -132,5 +126,24 @@ class RoomController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    /**
+     * @param Request $request
+     * @param $room_id
+     */
+    private function asignaServicios(Request $request, $room_id): void
+    {
+        if (!empty($request->input('services'))) {
+            $services = $request->input('services');
+            foreach ($services as $service) {
+                DB::table('rooms_services')->insert([
+                    'room_id' => $room_id,
+                    'service_id' => $service,
+                    'created_at' => Carbon::now(),
+                    'updated_at' => Carbon::now()
+                ]);
+            }
+        }
     }
 }
