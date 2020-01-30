@@ -31,7 +31,7 @@
                                 <tr>
                                     <td class="text-center"> {{ $room->numero }}</td>
                                     <td class="text-center"> PISO {{ $room->ubicacion }} </td>
-                                    <td class="text-center"> {{ $room->roomType->nombre }} </td>
+                                    <td class="text-center"> <span data-toggle="tooltip" title="Capacidad: {{ $room->roomType->total_room }} personas">{{ $room->roomType->nombre }}</span> </td>
                                     <td class="text-center"><h1
                                                 class="badge @if($room->room_status == "ACTIVA") badge-success @else badge-danger @endif">{{ $room->room_status }}</h1></td>
                                     <td>

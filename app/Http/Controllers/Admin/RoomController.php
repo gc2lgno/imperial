@@ -34,8 +34,7 @@ class RoomController extends Controller
     {
         $roomTypes = RoomTypes::all();
         $services = Service::all();
-        $hotel = Hotel::find(1);
-        $pisos = $hotel->pisos;
+        $pisos = Hotel::find(1)->pisos;
         return view('admin.rooms.create', compact(['roomTypes', 'services', 'pisos']));
     }
 
@@ -89,7 +88,8 @@ class RoomController extends Controller
      */
     public function show($id)
     {
-        //
+        $room = Room::findOrFail($id);
+        return view('admin.rooms.show', compact('room'));
     }
 
     /**
@@ -100,7 +100,15 @@ class RoomController extends Controller
      */
     public function edit($id)
     {
-        //
+        $room = Room::findOrFail($id);
+        $roomTypes = RoomTypes::all();
+        $pisos = Hotel::find(1)->pisos;
+        $servicios = Service::all();
+
+        $serviciosActivos = $room->services->pluck('id')->toArray();
+        $serviciosDisponibles = $servicios->except($serviciosActivos);
+
+        return view('admin.rooms.edit', compact(['room', 'roomTypes', 'serviciosDisponibles', 'pisos']));
     }
 
     /**
