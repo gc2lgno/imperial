@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4444ac86-4c06-4f43-b006-6f14a048a4f0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/customer/ModalSearch.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/booking/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/booking/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/common/errorsb.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Customer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CustomerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Room.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Room.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/hotel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/hotel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/customer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/customer/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/topbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/topbar.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +70,11 @@
     <findStrings>
       <find>&lt;/form&gt;</find>
       <find>Aws</find>
+      <find>has-warnin</find>
+      <find>primary</find>
+      <find>has-war</find>
+      <find>info</find>
+      <find>btn-info</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -87,8 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/css/login-register.css" />
-        <option value="$PROJECT_DIR$/public/css/hotel.css" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/es_VE/Person.php" />
@@ -128,14 +123,18 @@
         <option value="$PROJECT_DIR$/app/Room.php" />
         <option value="$PROJECT_DIR$/app/Booking.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/customer/search.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/CustomerController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/layout/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/customer/modal-search.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/components/customer/ModalSearch.vue" />
-        <option value="$PROJECT_DIR$/resources/views/admin/customer/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
+        <option value="$PROJECT_DIR$/resources/views/admin/customer/search.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/layout/topbar.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/public/css/hotel.css" />
+        <option value="$PROJECT_DIR$/resources/views/common/msjerrors.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/customer/results.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/CustomerController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/customer/index.blade.php" />
       </list>
     </option>
   </component>
@@ -232,14 +231,6 @@
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
     </include_path>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/dataSources.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
@@ -255,44 +246,13 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="imperial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imperial" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imperial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imperial" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imperial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imperial" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imperial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imperial" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imperial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imperial" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql&#10;mariadb" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="show&#9;FILE&#9;file://C:/laragon/www/imperial/resources/views/admin/room-types/show.blade.php&#10;edi&#9;FILE&#9;file://C:/laragon/www/imperial/resources/views/admin/customer/edit.blade.php&#10;index&#9;FILE&#9;file://C:/laragon/www/imperial/resources/views/admin/room-types/index.blade.php&#10;Room&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bin/git/bin/git.exe" />
@@ -350,12 +310,15 @@
       <workItem from="1580394252138" duration="889000" />
       <workItem from="1580398858386" duration="13171000" />
       <workItem from="1580433830105" duration="3103000" />
-      <workItem from="1580437188948" duration="1432000" />
+      <workItem from="1580437188948" duration="1886000" />
+      <workItem from="1580471866354" duration="1471000" />
+      <workItem from="1580477733749" duration="6013000" />
+      <workItem from="1580486770006" duration="7970000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95268000" />
+    <option name="totallyTimeSpent" value="111176000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -369,7 +332,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20877458" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21482602" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -389,67 +352,32 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.25037822" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21482602" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289256" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32820514" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.25037822" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/customer/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="45" column="11" lean-forward="true" selection-start-line="45" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2868aa1c-6690-40e7-8dc4-516eccbeed05/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3edb629e-ef58-4591-ace2-a81b60f569f1/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/room-types/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="77" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="77" />
-          <folding>
-            <marker date="1579910774043" expanded="true" signature="9:27" ph="..." />
-            <marker date="1579910774043" expanded="true" signature="38:74" ph="..." />
-            <marker date="1579910774043" expanded="true" signature="85:124" ph="..." />
-            <marker date="1579910774043" expanded="true" signature="135:144" ph="..." />
-            <marker date="1579910774043" expanded="true" signature="159:174" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/room-types/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="27" selection-end-line="68" selection-end-column="11" />
-          <folding>
-            <marker date="1579902100075" expanded="true" signature="9:27" ph="..." />
-            <marker date="1579902100075" expanded="true" signature="38:79" ph="..." />
-            <marker date="1579902100075" expanded="true" signature="90:127" ph="..." />
-            <marker date="1579902100075" expanded="true" signature="138:147" ph="..." />
-            <marker date="1579902100075" expanded="true" signature="158:173" ph="..." />
-            <marker date="1579902100075" expanded="true" signature="316:343" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/room-types/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/customer/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/service/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-300" />
@@ -696,27 +624,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/customer/modal-search.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="38" lean-forward="true" selection-end-line="42" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/layout/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="124" column="46" selection-start-line="124" selection-start-column="46" selection-end-line="124" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/customer/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/customer/modal-search.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/js/components/customer/ModalSearch.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -731,17 +639,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CustomerController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layout/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="804">
-          <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+        <state relative-caret-position="1124">
+          <caret line="124" column="46" selection-start-line="124" selection-start-column="46" selection-end-line="124" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/customer/search.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layout/topbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="33" column="88" selection-start-line="33" selection-start-column="88" selection-end-line="33" selection-end-column="88" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="264">
           <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/hotel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="20045" column="9" selection-start-line="20045" selection-start-column="9" selection-end-line="20045" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/common/errors.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="45" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/common/errorsb.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/customer/results.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/customer/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/common/success.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CustomerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="108" column="24" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
         </state>
       </provider>
     </entry>

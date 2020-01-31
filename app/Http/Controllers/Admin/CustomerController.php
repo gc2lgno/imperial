@@ -6,6 +6,7 @@ use App\Customer;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\CustomerRequest;
+use Symfony\Component\Console\Input\Input;
 
 class CustomerController extends Controller
 {
@@ -96,7 +97,16 @@ class CustomerController extends Controller
             ->with('success', '¡Cliente eliminado con éxito!');
     }
 
-    public function search(Request $request){
-        return $request->all();
+    public function search(Request $request)
+    {
+        $customers = Customer::query()->where('nombres', 'LIKE', '%' . $request->input('nombres') . '%')
+            ->orWhere('apellidos', 'LIKE', '%' . $request->input('nombres') . '%')->paginate(10);
+
+        if (count($customers) == 0) {
+            return redirect()->route('customer.index')
+                ->with('error', 'No se han encontrado resultados');
+        } else {
+            return view('admin.customer.index', compact('customers'))->with('success', 'Resultados de tu consulta.');
+        }
     }
 }

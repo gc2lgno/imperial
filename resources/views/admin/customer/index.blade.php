@@ -6,17 +6,34 @@
         <!-- column -->
         <div class="col-12">
             @include('common.success')
+            @include('common.errors')
+            @include('common.errorsb')
             <div class="card">
                 <div class="card-body">
-                    <button
-                            class="btn btn-success d-none d-lg-block m-l-15 float-right m-b-10 waves-effect waves-dark"
-                            data-toggle="modal" data-target="#customerSearch">
-                        <i class="ti-search menu-icon"></i> Buscar
-                    </button>
-
-                    <a href="{{ route('customer.create') }}"
-                       class="btn btn-info d-none d-lg-block m-l-15 float-right m-b-10 waves-effect waves-dark">
-                        <i class="ti-plus menu-icon"></i> Crear nuevo</a>
+                    <div class="row button-group float-right ">
+                        <div class="float-right">
+                            <a href="{{ route('customer.create') }}"
+                               class="btn btn-circle btn-info float-right m-b-10 waves-effect waves-dark"
+                               data-toggle="tooltip"
+                               title="Nuevo cliente">
+                                <i class="ti-plus"></i></a>
+                        </div>
+                    </div>
+                    {{--Formulario para la busqueda de Cliente--}}
+                    <div class="row has-info">
+                        <form action="{{ route('customer.search') }}" class="app-search d-none d-md-block d-lg-block"
+                              method="POST">
+                            @csrf
+                            <div class="input-group">
+                                <input type="text" name="nombres" id="nombres" class="form-control"
+                                       placeholder="Buscar cliente" required>
+                                <div class="input-group-append">
+                                <button type="submit" class="input-group-text btn-success" id="basic-addon11">
+                                        <i class="ti-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
