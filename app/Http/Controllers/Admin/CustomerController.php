@@ -95,4 +95,8 @@ class CustomerController extends Controller
         return redirect()->route('customer.index')
             ->with('success', '¡Cliente eliminado con éxito!');
     }
+
+    public function search(Request $request){
+        return $request->all();
+    }
 }

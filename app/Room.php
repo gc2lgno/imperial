@@ -24,8 +24,12 @@ class Room extends Model
         return $this->belongsTo(RoomTypes::class, 'room_type_id');
     }
 
-    function services()
+    public function services()
     {
         return $this->belongsToMany(Service::class, 'rooms_services');
+    }
+
+    public function booking(){
+        return $this->belongsTo(Booking::class);
     }
 }

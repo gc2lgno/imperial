@@ -135,7 +135,6 @@
     <script type="text/javascript">
         $('.scroll-sidebar').perfectScrollbar();
     </script>
-
 </body>
 
 </html>

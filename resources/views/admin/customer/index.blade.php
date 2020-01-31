@@ -8,13 +8,15 @@
             @include('common.success')
             <div class="card">
                 <div class="card-body">
-                    <a href="#"
-                       class="btn btn-success d-none d-lg-block m-l-15 float-right m-b-10 waves-effect waves-dark"><i
-                                class="ti-search menu-icon"></i> Buscar</a>
+                    <button
+                            class="btn btn-success d-none d-lg-block m-l-15 float-right m-b-10 waves-effect waves-dark"
+                            data-toggle="modal" data-target="#customerSearch">
+                        <i class="ti-search menu-icon"></i> Buscar
+                    </button>
 
                     <a href="{{ route('customer.create') }}"
-                       class="btn btn-info d-none d-lg-block m-l-15 float-right m-b-10 waves-effect waves-dark"><i
-                                class="ti-plus menu-icon"></i> Crear nuevo</a>
+                       class="btn btn-info d-none d-lg-block m-l-15 float-right m-b-10 waves-effect waves-dark">
+                        <i class="ti-plus menu-icon"></i> Crear nuevo</a>
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
@@ -43,8 +45,9 @@
                                             <form action="{{ route('customer.destroy', $customer->id) }}" method="post">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-circle btn-danger" data-toggle="tooltip"
-                                                   title="Eliminar Cliente">
+                                                <button type="submit" class="btn btn-circle btn-danger"
+                                                        data-toggle="tooltip"
+                                                        title="Eliminar Cliente">
                                                     <i class="ti-trash"></i>
                                                 </button>
                                             </form>

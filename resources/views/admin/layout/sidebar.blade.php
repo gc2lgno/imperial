@@ -11,20 +11,10 @@
                         <span class="hide-menu">Panel de Control</span></a>
                 </li>
                 <li class="nav-small-cap">--- Usuario</li>
-                <li><a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                        <i class="ti-calendar"></i>
-                        <span class="hide-menu">Reservaciones</span></a>
-                    <ul aria-expanded="false" class="collapse">
-                        <li><a href="#">
-                                <i class="ti-plus menu-icon"></i>
-                                Crear</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="ti-menu-alt menu-icon"></i>
-                                Lista</a>
-                        </li>
-                    </ul>
+                <li><a class="waves-effect waves-dark" href="{{ route('booking.index') }}" aria-expanded="false">
+                        <i class="ti-user"></i>
+                        <span class="hide-menu">Reservaciones</span>
+                    </a>
                 </li>
                 <li><a class="waves-effect waves-dark" href="{{ route('customer.index') }}" aria-expanded="false">
                         <i class="ti-user"></i>
