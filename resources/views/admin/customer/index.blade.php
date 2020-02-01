@@ -13,10 +13,10 @@
                     <div class="row button-group float-right ">
                         <div class="float-right">
                             <a href="{{ route('customer.create') }}"
-                               class="btn btn-circle btn-info float-right m-b-10 waves-effect waves-dark"
+                               class="btn btn-info d-none d-lg-block m-l-15 float-right m-b-10 waves-effect waves-dark"
                                data-toggle="tooltip"
                                title="Nuevo cliente">
-                                <i class="ti-plus"></i></a>
+                                <i class="ti-plus menu-icon"></i>Crear nuevo</a>
                         </div>
                     </div>
                     {{--Formulario para la busqueda de Cliente--}}
@@ -28,7 +28,7 @@
                                 <input type="text" name="nombres" id="nombres" class="form-control"
                                        placeholder="Buscar cliente" required>
                                 <div class="input-group-append">
-                                <button type="submit" class="input-group-text btn-success" id="basic-addon11">
+                                <button type="submit" class="input-group-text" id="basic-addon11">
                                         <i class="ti-search"></i></button>
                                 </div>
                             </div>
