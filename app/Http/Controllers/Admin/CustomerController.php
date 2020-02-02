@@ -99,8 +99,8 @@ class CustomerController extends Controller
 
     public function search(Request $request)
     {
-        $customers = Customer::query()->where('nombres', 'LIKE', '%' . $request->input('nombres') . '%')
-            ->orWhere('apellidos', 'LIKE', '%' . $request->input('nombres') . '%')->paginate(10);
+        $customers = Customer::query()->where('nombres', 'LIKE', '%' . $request->input('datos') . '%')
+            ->orWhere('apellidos', 'LIKE', '%' . $request->input('datos') . '%')->orWhere('rif', 'LIKE', '%'.$request->input('datos').'%')->paginate(10);
 
         if (count($customers) == 0) {
             return redirect()->route('customer.index')

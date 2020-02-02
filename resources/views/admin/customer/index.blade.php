@@ -25,7 +25,7 @@
                               method="POST">
                             @csrf
                             <div class="input-group">
-                                <input type="text" name="nombres" id="nombres" class="form-control"
+                                <input type="text" name="datos" id="nombres" class="form-control"
                                        placeholder="Buscar cliente" required>
                                 <div class="input-group-append">
                                 <button type="submit" class="input-group-text" id="basic-addon11">
