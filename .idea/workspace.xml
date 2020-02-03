@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4444ac86-4c06-4f43-b006-6f14a048a4f0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CustomerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/booking/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/booking/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/booking/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/booking/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/customer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/customer/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,21 +57,33 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CustomerController.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/customer/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="108" column="83" lean-forward="true" selection-start-line="108" selection-start-column="83" selection-end-line="108" selection-end-column="83" />
+            <state relative-caret-position="1400">
+              <caret line="70" column="93" selection-start-line="70" selection-start-column="93" selection-end-line="70" selection-end-column="93" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/customer/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+            <state relative-caret-position="520">
+              <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+              <folding>
+                <element signature="e#46#63#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/booking/create.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -99,7 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/es_VE/Person.php" />
         <option value="$PROJECT_DIR$/database/seeds/CustomerTableSeeder.php" />
@@ -132,8 +147,6 @@
         <option value="$PROJECT_DIR$/resources/views/admin/rooms/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/RoomController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/layout/sidebar.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/booking/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php" />
         <option value="$PROJECT_DIR$/app/Customer.php" />
         <option value="$PROJECT_DIR$/app/Room.php" />
         <option value="$PROJECT_DIR$/app/Booking.php" />
@@ -144,12 +157,15 @@
         <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/resources/views/admin/customer/search.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/layout/topbar.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/public/css/hotel.css" />
         <option value="$PROJECT_DIR$/resources/views/common/msjerrors.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/customer/results.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/customer/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/CustomerController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/booking/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/customer/index.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/booking/create.blade.php" />
       </list>
     </option>
   </component>
@@ -318,6 +334,14 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="booking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="imperial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="imperial" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="customer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -391,12 +415,13 @@
       <workItem from="1580471866354" duration="1471000" />
       <workItem from="1580477733749" duration="6013000" />
       <workItem from="1580486770006" duration="8045000" />
-      <workItem from="1580600395832" duration="1947000" />
+      <workItem from="1580600395832" duration="5092000" />
+      <workItem from="1580730136304" duration="950000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113198000" />
+    <option name="totallyTimeSpent" value="117293000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -411,7 +436,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21785174" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22087745" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -659,23 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/booking/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/customer/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="25" selection-end-line="65" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/home.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -719,13 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/hotel.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -755,13 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/booking/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Customer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -769,17 +763,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/customer/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CustomerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+        <state relative-caret-position="324">
+          <caret line="108" column="83" lean-forward="true" selection-start-line="108" selection-start-column="83" selection-end-line="108" selection-end-column="83" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CustomerController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/booking/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="108" column="83" lean-forward="true" selection-start-line="108" selection-start-column="83" selection-end-line="108" selection-end-column="83" />
+        <state relative-caret-position="320">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#2567#2574#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/customer/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="70" column="93" selection-start-line="70" selection-start-column="93" selection-end-line="70" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+          <folding>
+            <element signature="e#46#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/customer/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/booking/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
         </state>
       </provider>
     </entry>

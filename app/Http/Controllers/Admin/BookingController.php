@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Customer;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -22,9 +23,10 @@ class BookingController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($id)
     {
-        return view('admin.booking.create');
+        $customer = Customer::find($id);
+        return view('admin.booking.create', compact('customer'));
     }
 
     /**

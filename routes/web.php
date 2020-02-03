@@ -37,4 +37,5 @@ Route::resource('room-types', 'Admin\RoomTypesController');
 Route::resource('rooms', 'Admin\RoomController');
 
 /*Rutas de Reservas (BOOKING)*/
-Route::resource('booking', 'Admin\BookingController');
+Route::resource('booking', 'Admin\BookingController')->except('create');
+Route::get('booking/create/{id}', 'Admin\BookingController@create')->where('id', '[1-9]+')->name('booking.create');

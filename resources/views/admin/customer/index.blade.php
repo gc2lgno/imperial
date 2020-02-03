@@ -68,7 +68,7 @@
                                                     <i class="ti-trash"></i>
                                                 </button>
                                             </form>
-                                            <a href="#" class="btn btn-circle btn-primary" data-toggle="tooltip"
+                                            <a href="{{ route('booking.create', $customer->id) }}" class="btn btn-circle btn-primary" data-toggle="tooltip"
                                                title="Agendar Reserva">
                                                 <i class="ti-bookmark-alt"></i>
                                             </a>
