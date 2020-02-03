@@ -9,10 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon"/>
     <title>Hotel Imperial - @yield('title', 'Panel de Control')</title>
     <!-- Custom CSS -->
-    <link href="{{ asset('css/hotel.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/hotel.css') }}" rel="stylesheet"/>
     {{--Scripts--}}
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -20,121 +20,113 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+    <![endif]-->
 </head>
 
 <body class="skin-blue fixed-layout">
-    <!-- ============================================================== -->
-    <!-- Preloader - style you can find in spinners.css -->
-    <!-- ============================================================== -->
-    <div class="preloader">
-        <div class="loader">
-            <div class="loader__figure"></div>
-            <p class="loader__label">Hotel Imperial - Panel de Administración</p>
-        </div>
+<!-- ============================================================== -->
+<!-- Preloader - style you can find in spinners.css -->
+<!-- ============================================================== -->
+<div class="preloader">
+    <div class="loader">
+        <div class="loader__figure"></div>
+        <p class="loader__label">Hotel Imperial - Panel de Administración</p>
     </div>
+</div>
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
     <!-- ============================================================== -->
-    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- Topbar header - & Profile -->
     <!-- ============================================================== -->
-    <div id="main-wrapper">
+@include('admin.layout.topbar')
+<!-- ============================================================== -->
+    <!-- End Topbar header -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+@include('admin.layout.sidebar')
+<!-- ============================================================== -->
+    <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
         <!-- ============================================================== -->
-        <!-- Topbar header - & Profile -->
+        <!-- Container fluid  -->
         <!-- ============================================================== -->
-        @include('admin.layout.topbar')
-        <!-- ============================================================== -->
-        <!-- End Topbar header -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
-        @include('admin.layout.sidebar')
-        <!-- ============================================================== -->
-        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Page wrapper  -->
-        <!-- ============================================================== -->
-        <div class="page-wrapper">
+        <div class="container-fluid">
             <!-- ============================================================== -->
-            <!-- Container fluid  -->
+            <!-- Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
-            <div class="container-fluid">
-                <!-- ============================================================== -->
-                <!-- Bread crumb and right sidebar toggle -->
-                <!-- ============================================================== -->
-                <div class="row page-titles">
-                    <div class="col-md-5 align-self-center">
-                        <h4 class="text-themecolor">@yield('seccion', 'Inicio')</h4>
-                    </div>
-                    <div class="col-md-7 align-self-center text-right">
-                        <div class="d-flex justify-content-end align-items-center">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                                <li class="breadcrumb-item active">@yield('seccion', 'Inicio')</li>
-                            </ol>
-                        </div>
+            <div class="row page-titles">
+                <div class="col-md-5 align-self-center">
+                    <h4 class="text-themecolor">@yield('seccion', 'Inicio')</h4>
+                </div>
+                <div class="col-md-7 align-self-center text-right">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item active">@yield('seccion', 'Inicio')</li>
+                        </ol>
                     </div>
                 </div>
-                <!-- ============================================================== -->
-                <!-- End Bread crumb and right sidebar toggle -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Start Page Content -->
-                <!-- ============================================================== -->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <div id="app">
-                                    @yield('content')
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ============================================================== -->
-                <!-- End PAge Content -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
             </div>
             <!-- ============================================================== -->
-            <!-- End Container fluid  -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Start Page Content -->
+            <!-- ============================================================== -->
+            <div id="app">
+                @yield('content')
+            </div>
+            <!-- ============================================================== -->
+            <!-- End PAge Content -->
+            <!-- ============================================================== -->
             <!-- ============================================================== -->
         </div>
         <!-- ============================================================== -->
-        <!-- End Page wrapper  -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- footer -->
-        <!-- ============================================================== -->
-        <footer class="footer">
-            © 2019 Eliteadmin by themedesigner.in
-        </footer>
-        <!-- ============================================================== -->
-        <!-- End footer -->
+        <!-- End Container fluid  -->
         <!-- ============================================================== -->
     </div>
     <!-- ============================================================== -->
-    <!-- End Wrapper -->
+    <!-- End Page wrapper  -->
     <!-- ============================================================== -->
     <!-- ============================================================== -->
-    <!-- All Jquery -->
+    <!-- footer -->
     <!-- ============================================================== -->
-    <script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
-    <!-- slimscrollbar scrollbar JavaScript -->
-    <script src=" {{ asset('js/perfect-scrollbar.jquery.min.js') }} "></script>
-    <!--Wave Effects -->
-    <script src=" {{ asset('js/waves.js') }} "></script>
-    <!--Menu sidebar -->
-    <script src="{{ asset('js/sidebarmenu.js') }}"></script>
-    <!--stickey kit -->
-    <script src="{{ asset('js/sticky-kit.js') }}"></script>
-    <script src="{{ asset('js/jquery.sparkline.min.js') }}"></script>
-    <!--Custom JavaScript -->
-    <script src="{{ asset('js/custom.js') }}"></script>
-    <script type="text/javascript">
-        $('.scroll-sidebar').perfectScrollbar();
-    </script>
+    <footer class="footer">
+        © 2019 Eliteadmin by themedesigner.in
+    </footer>
+    <!-- ============================================================== -->
+    <!-- End footer -->
+    <!-- ============================================================== -->
+</div>
+<!-- ============================================================== -->
+<!-- End Wrapper -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
+<script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src=" {{ asset('js/perfect-scrollbar.jquery.min.js') }} "></script>
+<!--Wave Effects -->
+<script src=" {{ asset('js/waves.js') }} "></script>
+<!--Menu sidebar -->
+<script src="{{ asset('js/sidebarmenu.js') }}"></script>
+<!--stickey kit -->
+<script src="{{ asset('js/sticky-kit.js') }}"></script>
+<script src="{{ asset('js/jquery.sparkline.min.js') }}"></script>
+<!--Custom JavaScript -->
+<script src="{{ asset('js/custom.js') }}"></script>
+<script type="text/javascript">
+    $('.scroll-sidebar').perfectScrollbar();
+</script>
 </body>
 
 </html>

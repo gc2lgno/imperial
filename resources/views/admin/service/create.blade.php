@@ -4,7 +4,7 @@
 @section('content')
 @include('common.errors')
 <div class="row">
-    <div class="col-lg-12">
+    <div class="col-12">
         <div class="card">
             <div class="card-body">
                 <form action="{{ route('service.store') }}" method="POST">
@@ -15,8 +15,8 @@
                         <div class="row p-t-10">
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="control-label">Nombre</label>
-                                    <input required type="text" name="nombre" class="form-control">
+                                    <label for="nombre" class="control-label">Nombre</label>
+                                    <input required type="text" name="nombre" id="nombre" class="form-control">
                                     <small class="form-control-feedback"> Campo obligatorio </small> </div>
                             </div>
                             <!--/span-->
@@ -25,8 +25,8 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label">Detalle del Servicio</label>
-                                    <textarea name="detalle" cols="30" rows="5" class="form-control"
+                                    <label for="detalle" class="control-label">Detalle del Servicio</label>
+                                    <textarea name="detalle" id="detalle" cols="30" rows="5" class="form-control"
                                         required></textarea>
                                     <small class="form-control-feedback"> Campo obligatorio </small> </div>
                             </div>

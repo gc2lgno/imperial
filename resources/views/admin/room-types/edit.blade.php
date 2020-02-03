@@ -4,7 +4,7 @@
 @section('content')
     @include('common.errors')
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-12">
             <div class="card">
                 <div class="card-body">
                     <form action="{{ route('room-types.update', $roomType->id) }}" method="POST">
@@ -69,6 +69,7 @@
                                 <button type="reset" class="btn waves-effect waves-light btn-secondary">Cancelar
                                 </button>
                             </div>
+                        </div>
                     </form>
                 </div>
             </div>
