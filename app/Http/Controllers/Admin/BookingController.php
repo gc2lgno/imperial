@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Customer;
 use App\Http\Controllers\Controller;
+use App\Room;
+use App\RoomTypes;
 use Illuminate\Http\Request;
 
 class BookingController extends Controller
@@ -26,13 +28,16 @@ class BookingController extends Controller
     public function create($id)
     {
         $customer = Customer::find($id);
-        return view('admin.booking.create', compact('customer'));
+        $types = RoomTypes::all();
+//        $rooms = Room::where([['occupied_status', '=', 'DESOCUPADA'],
+//                             ['room_status', '=', 'ACTIVA']])->get();
+        return view('admin.booking.create', compact(['customer', 'rooms', 'types']));
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -43,7 +48,7 @@ class BookingController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -54,7 +59,7 @@ class BookingController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -65,8 +70,8 @@ class BookingController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -77,7 +82,7 @@ class BookingController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

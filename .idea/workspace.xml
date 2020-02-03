@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4444ac86-4c06-4f43-b006-6f14a048a4f0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/booking/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/booking/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/booking/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/booking/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/customer/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/customer/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/customer/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/customer/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/customer/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/customer/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/hotel/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/hotel/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/hotel/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/hotel/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/room-types/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/room-types/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/room-types/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/room-types/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/room-types/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/room-types/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/rooms/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/rooms/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/rooms/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/rooms/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/rooms/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/rooms/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/service/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/service/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/service/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/service/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/service/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/service/show.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,8 +57,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/booking/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+            <state relative-caret-position="504">
+              <caret line="53" column="41" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="33" column="81" selection-start-line="33" selection-start-column="81" selection-end-line="33" selection-end-column="81" />
+              <folding>
+                <element signature="e#46#63#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,8 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/factories/ServiceFactory.php" />
-        <option value="$PROJECT_DIR$/database/seeds/ServiceTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/HotelStatusTableSeeder.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/room-types/index.blade.php" />
@@ -138,7 +133,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/CustomerController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/customer/index.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/booking/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/layout/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/customer/show.blade.php" />
@@ -155,6 +149,9 @@
         <option value="$PROJECT_DIR$/resources/views/admin/customer/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/service/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/service/edit.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_03_110600_add_occupied_status_to_rooms_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_03_113309_add_booking_number_to_bookings_table.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/booking/create.blade.php" />
       </list>
     </option>
@@ -252,7 +249,7 @@
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -277,28 +274,18 @@
             <path>
               <item name="imperial" type="b2602c69:ProjectViewProjectNode" />
               <item name="imperial" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="imperial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="imperial" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="imperial" type="b2602c69:ProjectViewProjectNode" />
               <item name="imperial" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imperial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imperial" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imperial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imperial" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="booking" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -372,12 +359,12 @@
       <workItem from="1580477733749" duration="6013000" />
       <workItem from="1580486770006" duration="8045000" />
       <workItem from="1580600395832" duration="5092000" />
-      <workItem from="1580730136304" duration="5564000" />
+      <workItem from="1580730136304" duration="8932000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121907000" />
+    <option name="totallyTimeSpent" value="125275000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -389,10 +376,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22087745" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25945538" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -438,20 +424,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/CustomerRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-936">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/RoomTypesTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
@@ -622,16 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
-          <folding>
-            <element signature="e#46#63#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/customer/index.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -764,10 +726,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/booking/create.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_03_110600_add_occupied_status_to_rooms_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_03_113309_add_booking_number_to_bookings_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+          <caret line="16" column="74" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="33" column="81" selection-start-line="33" selection-start-column="81" selection-end-line="33" selection-end-column="81" />
+          <folding>
+            <element signature="e#46#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/booking/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="53" column="41" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
         </state>
       </provider>
     </entry>
