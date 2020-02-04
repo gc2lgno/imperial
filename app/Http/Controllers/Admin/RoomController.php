@@ -146,4 +146,13 @@ class RoomController extends Controller
             }
         }
     }
+
+    public function getRoomByType(Request $request, $id){
+        if($request->ajax()){
+        $rooms = Room::where([['room_type_id', $id], ['occupied_status', 'DESOCUPADA']])->get();
+        return $rooms;
+        }else{
+            abort(403, 'Esta acción no está permitida');
+        }
+    }
 }

@@ -16,10 +16,10 @@ mix.js("resources/js/app.js", "public/js").sass(
     "public/css"
 );
 
-mix.styles(
-    [
-        "resources/css/style.css",
-        "resources/css/login-register-lock.css"
-    ],
-    "public/css/hotel.css"
-);
+// mix.styles(
+//     [
+//         "resources/css/style.css",
+//         "resources/css/login-register-lock.css"
+//     ],
+//     "public/css/hotel.css"
+// );

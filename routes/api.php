@@ -16,3 +16,6 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('types', 'Admin\RoomTypesController@getTypes')->name('api.types');
+Route::get('rooms/{id}', 'Admin\RoomController@getRoomByType')->name('api.rooms');

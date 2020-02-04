@@ -97,4 +97,13 @@ class RoomTypesController extends Controller
         return redirect()->route('room-types.index')
             ->with('success', '¡Categoría eliminada correctamente!');
     }
+
+    public function getTypes(Request $request){
+        if($request->ajax()){
+        $types = RoomTypes::all();
+        return response()->json($types);
+        }else{
+            abort(403, 'Esta acción no está permitida');
+        }
+    }
 }
