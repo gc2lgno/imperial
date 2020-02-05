@@ -1,5 +1,5 @@
 <template>
-    <div class="col-lg-4 col-md-4">
+    <div class="card">
         <!-- Card -->
         <div class="card">
             <div class="card-body">
