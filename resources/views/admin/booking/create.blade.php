@@ -7,10 +7,18 @@
     @include('common.errors')
     @include('common.success')
     <div class="row">
-        <div class="col-12">
-            <div class="row">
-                <form action="{{ route('booking.store') }}" method="POST">
-                    @csrf
+        <div class="card col-7">
+            <div class="card-body">
+                <h4 class="card-title">Seleccionar fechas:</h4>
+                <dates-component></dates-component>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <form action="{{ route('booking.store') }}" method="POST">
+            @csrf
+            <div class="col-12">
+                <div class="row">
                     <input type="hidden" value="{{ $customer->id }}" name="customer_id" id="customer_id">
                     <div class="card-group">
                         <!-- Card -->
@@ -34,18 +42,18 @@
                             <img class="card-img-top img-responsive" src="{{ asset('img/room.jpeg') }}"
                                  alt="Card image cap">
                             <div class="card-body">
-                                <h4 class="card-title">Hotel Imperial</h4>
-                                <p class="card-text">Para continuar con el proceso de crear una nueva reserva pulse el
-                                    botón
-                                    "Siguiente".</p>
+                                {{--                                <h4 class="card-title">Hotel Imperial</h4>--}}
+                                {{--                                <p class="card-text">Para continuar con el proceso de crear una nueva reserva pulse el--}}
+                                {{--                                    botón--}}
+                                {{--                                    "Siguiente".</p>--}}
                                 <p class="card-text">
                                     <button type="submit" class="btn btn-primary float-right">Siguiente</button>
                                 </p>
                             </div>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 @endsection
