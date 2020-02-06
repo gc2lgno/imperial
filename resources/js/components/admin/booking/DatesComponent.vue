@@ -1,5 +1,5 @@
 <template>
-    <HotelDatePicker format="DD/MM/YYYY" :i18n="esVe" @click="cambio">
+    <HotelDatePicker format="DD/MM/YYYY" :i18n="esVe" @check-in-changed="getCheckIn" @check-out-changed="getCheckOut">
     </HotelDatePicker>
 </template>
 <script>
@@ -22,11 +22,14 @@
             }
         },
         mounted() {
-            this.cambio();
+            console.log('Componente montado');
         },
         methods: {
-            cambio(value){
-                console.log(value);
+            getCheckIn(date){
+                console.log("Check In: ", date);
+            },
+            getCheckOut(date){
+                console.log("Check Out: ", date);
             }
         }
     };

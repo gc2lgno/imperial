@@ -1956,11 +1956,14 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   mounted: function mounted() {
-    this.cambio();
+    console.log('Componente montado');
   },
   methods: {
-    cambio: function cambio(value) {
-      console.log(value);
+    getCheckIn: function getCheckIn(date) {
+      console.log("Check In: ", date);
+    },
+    getCheckOut: function getCheckOut(date) {
+      console.log("Check Out: ", date);
     }
   }
 });
@@ -37421,7 +37424,10 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("HotelDatePicker", {
     attrs: { format: "DD/MM/YYYY", i18n: _vm.esVe },
-    on: { click: _vm.cambio }
+    on: {
+      "check-in-changed": _vm.getCheckIn,
+      "check-out-changed": _vm.getCheckOut
+    }
   })
 }
 var staticRenderFns = []

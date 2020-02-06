@@ -7,7 +7,7 @@
     @include('common.errors')
     @include('common.success')
     <div class="row">
-        <div class="card col-7">
+        <div class="card col-12">
             <div class="card-body">
                 <h4 class="card-title">Seleccionar fechas:</h4>
                 <dates-component></dates-component>
@@ -42,10 +42,9 @@
                             <img class="card-img-top img-responsive" src="{{ asset('img/room.jpeg') }}"
                                  alt="Card image cap">
                             <div class="card-body">
-                                {{--                                <h4 class="card-title">Hotel Imperial</h4>--}}
-                                {{--                                <p class="card-text">Para continuar con el proceso de crear una nueva reserva pulse el--}}
-                                {{--                                    botón--}}
-                                {{--                                    "Siguiente".</p>--}}
+                                <h4 class="card-title">Hotel Imperial</h4>
+                                <p class="card-text">Para continuar con el proceso de crear una nueva reserva pulse el
+                                    botón "Siguiente".</p>
                                 <p class="card-text">
                                     <button type="submit" class="btn btn-primary float-right">Siguiente</button>
                                 </p>
