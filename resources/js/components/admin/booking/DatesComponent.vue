@@ -4,6 +4,7 @@
 </template>
 <script>
     import HotelDatePicker from 'vue-hotel-datepicker';
+    import moment from 'moment';
 
     export default {
         components: {
@@ -26,10 +27,12 @@
         },
         methods: {
             getCheckIn(date){
-                console.log("Check In: ", date);
+                let checkin = moment(date).format('DD/MM/YYYY');
+                console.log("Entrada: ", checkin);
             },
-            getCheckOut(date){
-                console.log("Check Out: ", date);
+            getCheckOut(date) {
+                let checkout = moment(date).format('DD/MM/YYYY');
+                console.log("Salida: ", checkout);
             }
         }
     };
