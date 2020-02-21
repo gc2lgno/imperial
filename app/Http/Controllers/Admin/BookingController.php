@@ -29,9 +29,8 @@ class BookingController extends Controller
     {
         $customer = Customer::find($id);
         $types = RoomTypes::all();
-        $rooms = Room::NotOccupied()->RoomsActive()->get();
+        $rooms = Room::notoccupied()->roomsactive()->get();
 
-        dd($rooms);
         return view('admin.booking.create', compact(['customer', 'rooms', 'types']));
     }
 

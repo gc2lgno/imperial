@@ -1,5 +1,6 @@
 <?php
 
+use App\Room;
 use App\RoomTypes;
 use Illuminate\Database\Seeder;
 
@@ -52,5 +53,9 @@ class RoomTypesTableSeeder extends Seeder
             $this->command->getOutput()->progressAdvance();
         }
         $this->command->getOutput()->progressFinish();
+
+
+
+        factory(Room::class, 100)->create();
     }
 }
