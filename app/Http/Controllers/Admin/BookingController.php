@@ -29,8 +29,9 @@ class BookingController extends Controller
     {
         $customer = Customer::find($id);
         $types = RoomTypes::all();
-//        $rooms = Room::where([['occupied_status', '=', 'DESOCUPADA'],
-//                             ['room_status', '=', 'ACTIVA']])->get();
+        $rooms = Room::NotOccupied()->RoomsActive()->get();
+
+        dd($rooms);
         return view('admin.booking.create', compact(['customer', 'rooms', 'types']));
     }
 

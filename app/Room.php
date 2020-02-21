@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 class Room extends Model
@@ -31,5 +32,16 @@ class Room extends Model
 
     public function booking(){
         return $this->belongsTo(Booking::class);
+    }
+
+    /// scopes
+
+    public function scopeNotOccupied(Builder $builder)
+    {
+        $builder->where('occupied_status', '=', 'DESOCUPADA');
+    }
+    public function scopeRoomsActive(Builder $builder)
+    {
+        $builder->where('room_status', '=', 'ACTIVA');
     }
 }
