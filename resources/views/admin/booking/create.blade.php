@@ -11,6 +11,7 @@
             <div class="card-body">
                 <h4 class="card-title">Seleccionar fechas:</h4>
                 <dates-component></dates-component>
+                
             </div>
         </div>
     </div>
@@ -31,13 +32,13 @@
                                 <p class="card-text"><span class="font-bold">Teléfono: </span> {{ $customer->telefono }}
                                 </p>
                                 <p class="card-text"><span
-                                            class="font-bold">Registrado desde: </span> {{ $customer->created_at->format('d/m/Y') }}
+                                        class="font-bold">Registrado desde: </span> {{ $customer->created_at->format('d/m/Y') }}
                                 </p>
                             </div>
                         </div>
                         <!-- Card -->
                         {{--Card para tipo de habitación--}}
-                        <booking-rooms-component></booking-rooms-component>
+                        <rooms-component></rooms-component>
                         <div class="card">
                             <img class="card-img-top img-responsive" src="{{ asset('img/room.jpeg') }}"
                                  alt="Card image cap">
