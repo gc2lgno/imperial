@@ -1940,8 +1940,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1967,14 +1965,16 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     getCheckIn: function getCheckIn(date) {
-      var checkin = moment__WEBPACK_IMPORTED_MODULE_1___default()(date).format('DD/MM/YYYY');
-      console.log("Entrada: ", checkin);
+      var checkin = moment__WEBPACK_IMPORTED_MODULE_1___default()(date).format('DD/MM/YYYY'); // console.log("Entrada: ", checkin);
+
       this.entrada = checkin;
+      console.log(this.entrada);
     },
     getCheckOut: function getCheckOut(date) {
-      var checkout = moment__WEBPACK_IMPORTED_MODULE_1___default()(date).format('DD/MM/YYYY');
-      console.log("Salida: ", checkout);
+      var checkout = moment__WEBPACK_IMPORTED_MODULE_1___default()(date).format('DD/MM/YYYY'); // console.log("Salida: ", checkout);
+
       this.salida = checkout;
+      console.log(this.salida);
     }
   }
 });
@@ -55034,8 +55034,20 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {}
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("HotelDatePicker", {
+    attrs: { format: "DD/MM/YYYY", i18n: _vm.esVe },
+    on: {
+      "check-in-changed": _vm.getCheckIn,
+      "check-out-changed": _vm.getCheckOut
+    }
+  })
+}
 var staticRenderFns = []
+render._withStripped = true
 
 
 
@@ -55128,7 +55140,7 @@ var render = function() {
                 }
               ],
               staticClass: "form-control",
-              attrs: { name: "rooms", id: "rooms", required: "" },
+              attrs: { name: "room", id: "room", required: "" },
               on: {
                 change: function($event) {
                   var $$selectedVal = Array.prototype.filter
@@ -67567,8 +67579,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/angel/html/058/imperial/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/angel/html/058/imperial/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\laragon\www\imperial\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\imperial\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

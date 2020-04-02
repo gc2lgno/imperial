@@ -1,8 +1,6 @@
 <template>
     <HotelDatePicker format="DD/MM/YYYY" :i18n="esVe" @check-in-changed="getCheckIn" @check-out-changed="getCheckOut">
     </HotelDatePicker>
-    <input type="hidden" v-model="entrada" name="entrada">
-    <input type="hidden" v-model="salida" name="salida">
 </template>
 <script>
     import HotelDatePicker from 'vue-hotel-datepicker';
@@ -32,13 +30,15 @@
         methods: {
             getCheckIn(date) {
                 let checkin = moment(date).format('DD/MM/YYYY');
-                console.log("Entrada: ", checkin);
+                // console.log("Entrada: ", checkin);
                 this.entrada = checkin;
+                console.log(this.entrada);
             },
             getCheckOut(date) {
                 let checkout = moment(date).format('DD/MM/YYYY');
-                console.log("Salida: ", checkout);
+                // console.log("Salida: ", checkout);
                 this.salida = checkout;
+                console.log(this.salida);
             }
         }
     };

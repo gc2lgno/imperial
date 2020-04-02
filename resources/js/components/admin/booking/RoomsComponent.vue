@@ -15,7 +15,7 @@
                 <br>
                 <div class="room">
                     <h4 class="card-title">Habitación</h4>
-                    <select v-model="select_rooms" name="rooms" id="rooms" class="form-control" required>
+                    <select v-model="select_rooms" name="room" id="room" class="form-control" required>
                         <option v-for="room in rooms" :value="room.id"> N° {{ room.numero }} - PISO {{ room.ubicacion }} </option>
                     </select>
                 </div>

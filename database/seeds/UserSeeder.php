@@ -13,14 +13,14 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        $gabo = new User();
-        $gabo->nombres = "Administrador";
-        $gabo->apellidos = "Administrador";
-        $gabo->cedula = "V12345678";
-        $gabo->username = "admin";
-        $gabo->email = "admin@gmail.com";
-        $gabo->email_verified_at = now();
-        $gabo->password = Hash::make('12345678');
-        $gabo->save();
+        $admin = new User();
+        $admin->nombres = "Administrador";
+        $admin->apellidos = "Administrador";
+        $admin->cedula = "V12345678";
+        $admin->username = "admin";
+        $admin->email = "admin@gmail.com";
+        $admin->email_verified_at = now();
+        $admin->password = Hash::make('12345678');
+        $admin->save();
     }
 }
