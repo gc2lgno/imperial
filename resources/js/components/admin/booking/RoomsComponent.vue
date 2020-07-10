@@ -7,8 +7,7 @@
                     <h4 class="card-title">Tipo de Habitación</h4>
                     <select v-model="select_type" name="room_type_id" id="room_type_id" class="form-control" required
                             @change="cambio">
-                        <option v-for="type in room_types" :value="type.id"> {{ type.nombre }} (MÁX. {{ type.total_room
-                            }} Personas)
+                        <option v-for="type in room_types" :value="type.id" v-bind:key="type"> {{ type.nombre }} (MÁX. {{ type.total_room}} Personas)
                         </option>
                     </select>
                 </div>
@@ -16,7 +15,7 @@
                 <div class="room">
                     <h4 class="card-title">Habitación</h4>
                     <select v-model="select_rooms" name="room" id="room" class="form-control" required>
-                        <option v-for="room in rooms" :value="room.id"> N° {{ room.numero }} - PISO {{ room.ubicacion }} </option>
+                        <option v-for="room in rooms" :value="room.id" v-bind:key="room"> N° {{ room.numero }} - PISO {{ room.ubicacion }} </option>
                     </select>
                 </div>
             </div>
